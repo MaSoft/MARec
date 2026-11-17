@@ -6,7 +6,7 @@ Grabadora de audio para el móvil y el ordenador: grabación manual, automática
 
 - **Windows 1.2.0:** [instalador](https://github.com/MaSoft/MARec/releases/download/escritorio-v1.2.0/MARec_Escritorio_Setup_v1.2.0.exe) o [ejecutable único](https://github.com/MaSoft/MARec/releases/download/escritorio-v1.2.0/MARec_v1.2.0.exe)
 - **Android 1.5.0:** [APK](https://github.com/MaSoft/MARec/releases/download/android-v1.5.0/MARec-1.5.0.apk)
-- **Reloj Wear OS 1.1.0:** [APK del reloj](https://github.com/MaSoft/MARec/releases/download/reloj-v1.1.0/MARecClock-1.1.0.apk) (opcional, necesita la app del móvil)
+- **Reloj (Wear OS), MARecClock 1.1.0:** [APK del reloj](https://github.com/MaSoft/MARec/releases/download/reloj-v1.1.0/MARecClock-1.1.0.apk) (opcional, necesita la app del móvil)
 
 Más información y los manuales también en [masoft.es](https://masoft.es/descargas.html#marec).
 
@@ -53,10 +53,9 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 
 ## Android 1.5.0
 
-**Android 10 o superior · reloj Wear OS 3 o superior (opcional)** · [Página de la versión](https://github.com/MaSoft/MARec/releases/tag/android-v1.5.0)
+**Android 10 o superior** · [Página de la versión](https://github.com/MaSoft/MARec/releases/tag/android-v1.5.0)
 
 - **APK:** [`MARec-1.5.0.apk`](https://github.com/MaSoft/MARec/releases/download/android-v1.5.0/MARec-1.5.0.apk) · 61,2 MB · SHA-256 `fedfdf6f2e6f52cc20cc7b5c53907ede397799cdeb8accc3930fa13e38cd5da9`
-- **APK del reloj (Wear OS):** [`MARecClock-1.1.0.apk`](https://github.com/MaSoft/MARec/releases/download/reloj-v1.1.0/MARecClock-1.1.0.apk) · 2,6 MB · SHA-256 `5cf672ef68f94136ce3382dd5b73c9ccc37bebeb6336b53921962e75d39775a3`
 
 ### Qué hace
 - Manual o Automático: graba al pulsar o solo cuando hay sonido por encima del umbral, sin perder los segundos de antes.
@@ -69,8 +68,6 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 - Widget y botón en los ajustes rápidos para grabar sin abrir la app; Lugares que dan nombre y categoría a lo grabado allí.
 - Limpieza que pregunta: propone las antiguas o las que pasan de un tamaño y tú eliges. Nunca borra sola.
 - Sincronización con MARec del PC por la Wi-Fi, y «Quitar del móvil» lo que el PC ya tiene entero para liberar espacio.
-- App para el reloj (MARecClock, Wear OS): graba en Detectando sonido o Continua; un toque pausa y dos paran, con una vibración corta como respuesta.
-- Lo grabado en el reloj se guarda o se elimina allí mismo; al Guardar pasa al móvil, a «Grabaciones Reloj», y se borra del reloj solo cuando el móvil confirma que la tiene.
 
 ### Requisitos
 
@@ -81,8 +78,6 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 | Internet | No hace falta: las grabaciones se quedan en el móvil y la sincronización va por la Wi-Fi de casa u oficina. |
 | Instalación | Se descarga el APK en el móvil y se abre; Android pide permiso para instalar aplicaciones de esa fuente. |
 | Actualizar | La versión nueva se instala encima de la anterior sin perder las grabaciones. |
-| Reloj (opcional) | Wear OS 3 o superior, emparejado con el móvil que tiene MARec 1.5.0; sin el móvil no funciona. |
-| Instalar en el reloj | No se instala tocando el archivo como en el móvil: se pasa desde el ordenador con la depuración inalámbrica del reloj (ADB). |
 
 ### Capturas
 
@@ -90,7 +85,40 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 |---|---|
 | ![Grabar](capturas/08-movil-grabar.webp)<br>**Grabar.** Manual o Automático con su medidor de nivel, y grabando con marcas. | ![Grabaciones](capturas/09-movil-grabaciones.webp)<br>**Grabaciones.** Por días o por categorías, con favoritas, bloqueadas y adjuntos a la vista. |
 | ![Ficha y editor](capturas/10-movil-ficha.webp)<br>**Ficha y editor.** Reproductor con onda y marcas, nota y adjuntos; y el editor de audio. | ![Programar y Lugares](capturas/11-movil-programar.webp)<br>**Programar y Lugares.** Franjas por horas y días, y los lugares que dan nombre a lo grabado allí. |
-| ![Reloj: grabar](capturas/12-movil-reloj.webp)<br>**Reloj: grabar.** MARecClock en el reloj: los dos modos y la grabación en marcha (un toque pausa, dos paran). | ![Reloj: grabaciones y ajustes](capturas/13-movil-reloj_grabaciones.webp)<br>**Reloj: grabaciones y ajustes.** Guardar al móvil o eliminar lo grabado, y el umbral de Detectando sonido. |
+
+## Reloj (Wear OS): MARecClock 1.1.0
+
+**Wear OS 3 o superior · con MARec en el móvil** · [Página de la versión](https://github.com/MaSoft/MARec/releases/tag/reloj-v1.1.0)
+
+- **APK:** [`MARecClock-1.1.0.apk`](https://github.com/MaSoft/MARec/releases/download/reloj-v1.1.0/MARecClock-1.1.0.apk) · 2,6 MB · SHA-256 `5cf672ef68f94136ce3382dd5b73c9ccc37bebeb6336b53921962e75d39775a3`
+
+### Qué hace
+- Detectando sonido: graba solo cuando hay sonido por encima del umbral, con los 3 segundos de antes; si vuelve antes de 2 minutos, sigue en la misma grabación.
+- Continua: una sola grabación desde que pulsas hasta que paras.
+- Un toque en cualquier parte de la pantalla pausa o sigue en la misma grabación y dos toques la paran, con una vibración como respuesta. Sin sonidos.
+- Al parar, cada grabación se guarda o se elimina en el propio reloj; también «Guardar todas» y «Eliminar todas», con confirmación.
+- Lo guardado pasa solo al móvil, a «Grabaciones Reloj», aunque el reloj entre en reposo; se borra del reloj solo cuando el móvil confirma que lo tiene.
+- Umbral y silencio para cortar ajustables en el propio reloj.
+
+### Requisitos
+
+| | |
+|---|---|
+| Reloj | Wear OS 3 o superior, de cualquier marca. |
+| Móvil | MARec 1.5.0 o posterior en el móvil emparejado con el reloj: sin él no funciona. |
+| Permisos | Micrófono (imprescindible) y avisos; se piden la primera vez que se graba. |
+| Internet | No hace falta: el envío va del reloj al móvil por su conexión directa. |
+| Instalación | Desde un ordenador, con la depuración inalámbrica del reloj: los pasos están arriba y en el manual. |
+| Actualizar | La versión nueva se instala encima sin perder las grabaciones del reloj. |
+
+### Capturas
+
+| | |
+|---|---|
+| ![Grabar](capturas/12-reloj-grabar.webp)<br>**Grabar.** Los dos modos y la grabación en marcha, con el tiempo, el estado y el nivel de sonido. | ![Pausa y ajustes](capturas/13-reloj-pausa_ajustes.webp)<br>**Pausa y ajustes.** En pausa con un toque, y el umbral y el silencio de Detectando sonido. |
+| ![Guardar o eliminar](capturas/14-reloj-guardar.webp)<br>**Guardar o eliminar.** Guardar todas al móvil o eliminarlas, y la ficha de una grabación. |  |
+
+Manual con la instalación paso a paso: [manual_MARecClock.html](https://github.com/MaSoft/MARec/releases/download/reloj-v1.1.0/manual_MARecClock.html) (descárgalo y ábrelo en el navegador). También en [masoft.es](https://masoft.es/relojes.html#marecclock).
 
 ## Instalación y comprobación
 
