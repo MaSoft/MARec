@@ -104,7 +104,7 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 
 | | |
 |---|---|
-| Reloj | Wear OS 3 o superior, de cualquier marca. |
+| Sistema | Wear OS 3 o superior, de cualquier marca. |
 | Móvil | MARec 1.5.0 o posterior en el móvil emparejado con el reloj: sin él no funciona. |
 | Permisos | Micrófono (imprescindible) y avisos; se piden la primera vez que se graba. |
 | Internet | No hace falta: el envío va del reloj al móvil por su conexión directa. |
