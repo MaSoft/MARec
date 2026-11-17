@@ -108,7 +108,7 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 | Móvil | MARec 1.5.0 o posterior en el móvil emparejado con el reloj: sin él no funciona. |
 | Permisos | Micrófono (imprescindible) y avisos; se piden la primera vez que se graba. |
 | Internet | No hace falta: el envío va del reloj al móvil por su conexión directa. |
-| Instalación | Desde un ordenador, con la depuración inalámbrica del reloj: los pasos están arriba y en el manual. |
+| Instalación | Desde un ordenador, con la depuración inalámbrica del reloj: los pasos, en la página Relojes de masoft.es y en el manual. |
 | Actualizar | La versión nueva se instala encima sin perder las grabaciones del reloj. |
 
 ### Capturas
