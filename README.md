@@ -41,7 +41,7 @@ Más información y los manuales también en [masoft.es](https://masoft.es/desca
 | Micrófono | Solo para grabar en el PC. |
 | Red | Solo para sincronizar: el PC y el móvil en la misma red, puerto 47890 permitido en redes privadas. |
 | Voces y texto | Procesador de 4 núcleos o más, 8 GB de memoria y 3,1 GB de disco. Internet solo una vez, para descargar los modelos. |
-| Instalación | Instalador para tu usuario, sin permisos de administrador, o ejecutable único que se copia y se abre; Python va dentro. |
+| Instalación | Instalador para tu usuario, sin permisos de administrador, o ejecutable único que se copia y se abre; no hace falta instalar nada más. |
 
 ### Capturas
 
